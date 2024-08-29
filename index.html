@@ -1,493 +1,1131 @@
-<!DOCTYPE html><!--  Last Published: Thu Aug 29 2024 10:56:20 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="66cde38023387d736eebd475" data-wf-site="66cde38023387d736eebd3f6">
-<head>
-  <meta charset="utf-8">
-  <title>AI Club</title>
-  <meta content="La community per chi vuole guidare la AI Transformation e restare aggiornato sulle ultime innovazioni nel mondo dell&#x27;intelligenza artificiale generativa" name="description">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <link href="css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="css/webflow.css" rel="stylesheet" type="text/css">
-  <link href="css/ai-club-landing-page.webflow.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-  <script type="text/javascript">WebFont.load({  google: {    families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic"]  }});</script>
-  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
-  <link href="images/webclip.png" rel="apple-touch-icon">
-</head>
-<body>
-  <div class="full-header-wrapper">
-    <div class="navigation-wrapper">
-      <div data-collapse="medium" data-animation="default" data-duration="400" data-w-id="e2f97efd-812e-0919-8230-33257edca12a" data-easing="ease" data-easing2="ease" role="banner" class="navigation w-nav">
-        <div class="container-navigation">
-          <div class="navigation-menu">
-            <a href="index.html" aria-current="page" class="brand w-nav-brand w--current"><img src="images/AICLUB_LOGOTIPO3.png" loading="lazy" sizes="(max-width: 479px) 50vw, 120px" srcset="images/AICLUB_LOGOTIPO3-p-500.png 500w, images/AICLUB_LOGOTIPO3.png 1018w" alt="" class="logo"></a>
-            <nav role="navigation" class="nav-menu w-nav-menu">
-              <a href="#about" class="nav-link w-nav-link">About</a>
-              <a href="#features" class="nav-link w-nav-link">Features</a>
-              <a href="#aziende" class="nav-link w-nav-link">Aziende</a>
-              <a href="#individui" class="nav-link w-nav-link">Individui</a>
-              <a href="#joinus" class="nav-link is-cta w-nav-link">Entra in AI Club</a>
-              <a href="#joinus" class="button-sign-in w-button">Unisciti</a>
-            </nav>
-          </div>
-          <div class="navigation-button-wrap hide">
-            <div class="menu-button w-nav-button">
-              <div class="w-icon-nav-menu"></div>
+<!DOCTYPE html>
+<!--  Last Published: Thu Aug 29 2024 10:56:20 GMT+0000 (Coordinated Universal Time)  -->
+<html
+  data-wf-page="66cde38023387d736eebd475"
+  data-wf-site="66cde38023387d736eebd3f6"
+>
+  <head>
+    <meta charset="utf-8" />
+    <title>AI Club</title>
+    <meta
+      content="La community per chi vuole guidare la AI Transformation e restare aggiornato sulle ultime innovazioni nel mondo dell&#x27;intelligenza artificiale generativa"
+      name="description"
+    />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="css/webflow.css" rel="stylesheet" type="text/css" />
+    <link
+      href="css/ai-club-landing-page.webflow.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link
+      href="https://fonts.gstatic.com"
+      rel="preconnect"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: [
+            "Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic",
+          ],
+        },
+      });
+    </script>
+    <script type="text/javascript">
+      !(function (o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        (n.className += t + "js"),
+          ("ontouchstart" in o ||
+            (o.DocumentTouch && c instanceof DocumentTouch)) &&
+            (n.className += t + "touch");
+      })(window, document);
+    </script>
+    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="images/webclip.png" rel="apple-touch-icon" />
+  </head>
+  <body>
+    <div class="full-header-wrapper">
+      <div class="navigation-wrapper">
+        <div
+          data-collapse="medium"
+          data-animation="default"
+          data-duration="400"
+          data-w-id="e2f97efd-812e-0919-8230-33257edca12a"
+          data-easing="ease"
+          data-easing2="ease"
+          role="banner"
+          class="navigation w-nav"
+        >
+          <div class="container-navigation">
+            <div class="navigation-menu">
+              <a
+                href="index.html"
+                aria-current="page"
+                class="brand w-nav-brand w--current"
+                ><img
+                  src="images/AICLUB_LOGOTIPO3.png"
+                  loading="lazy"
+                  sizes="(max-width: 479px) 50vw, 120px"
+                  srcset="
+                    images/AICLUB_LOGOTIPO3-p-500.png  500w,
+                    images/AICLUB_LOGOTIPO3.png       1018w
+                  "
+                  alt=""
+                  class="logo"
+              /></a>
+              <nav role="navigation" class="nav-menu w-nav-menu">
+                <a href="#about" class="nav-link w-nav-link">About</a>
+                <a href="#features" class="nav-link w-nav-link">Features</a>
+                <a href="#aziende" class="nav-link w-nav-link">Aziende</a>
+                <a href="#individui" class="nav-link w-nav-link">Individui</a>
+                <a href="#joinus" class="nav-link is-cta w-nav-link"
+                  >Entra in AI Club</a
+                >
+                <a href="#joinus" class="button-sign-in w-button">Unisciti</a>
+              </nav>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div data-w-id="b9c346f1-75b3-80b3-301a-bbdf02b7efb1" class="header-section">
-      <div class="container">
-        <div class="w-layout-grid hero-grid">
-          <div class="hero-content-wrapper">
-            <h1 class="hero-heading">Stai al passo con la <span class="brand-span">genAI</span></h1>
-            <p class="hero-paragraph">AI Club è la community per chi vuole guidare la AI Transformation e restare aggiornato sulle ultime innovazioni nel mondo dell&#x27;intelligenza artificiale generativa.</p>
-            <div class="div-block">
-              <div class="hero-button-wrapper">
-                <a href="#joinus" class="button w-button">Entra in AI Club</a>
-              </div>
-            </div>
-          </div>
-          <div class="hero-image-wrapper"><img src="images/Untitled-design-1.png" loading="lazy" width="318" sizes="(max-width: 767px) 90vw, 600px" alt="" srcset="images/Untitled-design-1-p-500.png 500w, images/Untitled-design-1-p-800.png 800w, images/Untitled-design-1-p-1080.png 1080w, images/Untitled-design-1.png 1320w" class="phone"><img src="images/61d39b4fd59ad9d3ed3b7498_image-3d-5-hero-coin-template.png" loading="lazy" alt="" class="pattern-base"><img src="images/vecteezy_3d-shape-triangle-pyramid-in-pastel-color_9345195.png" loading="lazy" sizes="(max-width: 991px) 90vw, 700px" srcset="images/vecteezy_3d-shape-triangle-pyramid-in-pastel-color_9345195-p-500.png 500w, images/vecteezy_3d-shape-triangle-pyramid-in-pastel-color_9345195-p-800.png 800w, images/vecteezy_3d-shape-triangle-pyramid-in-pastel-color_9345195-p-1080.png 1080w, images/vecteezy_3d-shape-triangle-pyramid-in-pastel-color_9345195-p-1600.png 1600w, images/vecteezy_3d-shape-triangle-pyramid-in-pastel-color_9345195-p-2000.png 2000w, images/vecteezy_3d-shape-triangle-pyramid-in-pastel-color_9345195.png 2100w" alt="" class="card-heart"><img src="images/61d39b4fd59ad9ceff3b7490_image-3d-2-hero-coin-template.png" loading="lazy" alt="" class="card-pen"></div>
-        </div>
-        <div class="bottom-content hide">
-          <div class="bottom-content-wrapper">
-            <div class="avatar-row">
-              <div class="avatar-small"><img src="https://uploads-ssl.webflow.com/61b1691ce8e93c4dc52477f0/61b1777509ecf0c777772a6f_Avatar%2001.png" loading="lazy" alt="" class="avatar-image"></div>
-              <div class="avatar-small avatar-stack"><img src="https://uploads-ssl.webflow.com/61b1691ce8e93c4dc52477f0/61b17777ef3acd43d0bbb4e9_Avatar%2002.png" loading="lazy" alt="" class="avatar-image"></div>
-              <div class="avatar-small avatar-stack"><img src="https://uploads-ssl.webflow.com/61b1691ce8e93c4dc52477f0/61b17778d164d7f9f7c9c5b8_Avatar%2003.png" loading="lazy" alt="" class="avatar-image"></div>
-            </div>
-            <div class="text-detail">Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do eiusmod tempor. </div>
-          </div>
-          <div class="bottom-content-wrapper">
-            <div class="text-detail">Lorem ipsum dolor sit amet, consectetur</div>
-            <div class="logo-line"></div>
-            <div class="logo-wrapper"><img src="https://uploads-ssl.webflow.com/61b1691ce8e93c4dc52477f0/61b175dbd1ffed24bf34ade7_Logo%201.svg" loading="lazy" alt="" class="company-logo"><img src="https://uploads-ssl.webflow.com/61b1691ce8e93c4dc52477f0/61b175dd1ddc83147ee1f503_Logo%202.svg" loading="lazy" alt="" class="company-logo"><img src="https://uploads-ssl.webflow.com/61b1691ce8e93c4dc52477f0/61b175deef3acd6626bb8e30_Logo%203.svg" loading="lazy" alt="" class="company-logo"><img src="https://uploads-ssl.webflow.com/61b1691ce8e93c4dc52477f0/61b175e009ecf083c777107a_Logo%204.svg" loading="lazy" alt="" class="company-logo"></div>
-          </div>
-        </div>
-      </div><img src="https://uploads-ssl.webflow.com/61b1691ce8e93c4dc52477f0/61b1691ce8e93cb324247804_Header%20Blur.png" loading="lazy" alt="" class="bloom-effect">
-    </div>
-  </div>
-  <div id="about" class="section is-about">
-    <div class="container-2">
-      <div class="w-layout-grid grid-content">
-        <div id="w-node-_6017de3c-9b4a-57ec-fc9d-90de22efa7fd-6eebd475" class="content-wrapper">
-          <h2 class="h3-heading is-azienda">Una community esclusiva di formazione continua su AI.</h2>
-          <p class="paragraph-large">Rimani aggiornato. Chiedi supporto agli esperti. Connettiti con altri leader del settore.</p>
-          <div class="w-layout-grid grid-content-feature hide">
-            <div class="feature-wrapper-horizontal">
-              <div class="feature-icon-circle"><img src="https://uploads-ssl.webflow.com/61dcbec83326c65ac3eb03fa/61dcc84bbd7fa88dd37a2114_Feature%20Icon%2001.svg" loading="lazy" alt=""></div>
-              <div>
-                <div class="heading-large">Rimani aggiornato</div>
-              </div>
-            </div>
-            <div class="feature-wrapper-horizontal">
-              <div class="feature-icon-circle"><img src="https://uploads-ssl.webflow.com/61dcbec83326c65ac3eb03fa/61dcc84bbd7fa8b8767a2115_Feature%20Icon%2003.svg" loading="lazy" alt=""></div>
-              <div>
-                <div class="heading-large">Lorem ipsum dolor sit</div>
-              </div>
-            </div>
-            <div id="w-node-c6000b2c-c85c-d4fe-9e9f-867820cf316b-6eebd475" class="feature-wrapper-horizontal">
-              <div class="feature-icon-circle"><img src="https://uploads-ssl.webflow.com/61dcbec83326c65ac3eb03fa/61dcc84bbd7fa8b8767a2115_Feature%20Icon%2003.svg" loading="lazy" alt=""></div>
-              <div>
-                <div class="heading-large no-margin">Lorem ipsum dolor sit</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="image-block-small"><img src="images/h1-ezgif.com-optimize.gif" loading="lazy" alt="" class="image-cover">
-            <div class="content-background"></div>
-            <div class="card-ui-graph">
-              <div class="graph-svg w-embed"><!--  Replace the fill="#HEX" with your own color hexs. Go you little coder you!  -->
-                <svg width="86" height="86" viewbox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M64.7652 80.0847C72.8927 75.3146 79.2282 68.0066 82.7971 59.2846C86.3661 50.5625 86.9709 40.9096 84.5186 31.8103C82.0662 22.711 76.6925 14.6693 69.2239 8.92203C61.7553 3.17475 52.6054 0.0401722 43.1815 0.000383263L43.0719 25.9718C46.8038 25.9876 50.4272 27.2289 53.3849 29.5048C56.3425 31.7808 58.4705 34.9654 59.4417 38.5688C60.4128 42.1722 60.1733 45.9948 58.76 49.4488C57.3467 52.9028 54.8378 55.7969 51.6192 57.6859L64.7652 80.0847Z" fill="#000000"></path>
-                  <path d="M43.7921 0.0072956C37.0833 -0.116301 30.4388 1.33181 24.3899 4.2358C18.341 7.13979 13.0556 11.4191 8.95655 16.7313C4.8575 22.0436 2.05851 28.2414 0.783477 34.829C-0.491554 41.4166 -0.207242 48.2112 1.61367 54.6693C3.43458 61.1273 6.74156 67.0696 11.2701 72.0209C15.7986 76.9721 21.423 80.7949 27.6933 83.1834C33.9637 85.5719 40.706 86.4599 47.381 85.7762C54.0559 85.0926 60.4783 82.8564 66.1343 79.2464L52.1614 57.3539C49.9215 58.7835 47.3782 59.669 44.7349 59.9397C42.0916 60.2105 39.4216 59.8588 36.9384 58.913C34.4553 57.9671 32.228 56.4532 30.4347 54.4925C28.6414 52.5318 27.3318 50.1786 26.6107 47.6211C25.8896 45.0637 25.777 42.373 26.2819 39.7642C26.7868 37.1555 27.8953 34.7011 29.5185 32.5974C31.1418 30.4937 33.2348 28.7991 35.6302 27.6491C38.0257 26.4991 40.657 25.9256 43.3137 25.9745L43.7921 0.0072956Z" fill="#4c6fb2"></path>
-                </svg>
-              </div>
-              <div>
-                <div class="card-heading">$15,200.00</div>
-                <p class="card-text">Total Portofolio</p>
+            <div class="navigation-button-wrap hide">
+              <div class="menu-button w-nav-button">
+                <div class="w-icon-nav-menu"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div id="features" class="section bg-brown">
-    <div class="container-large">
-      <div class="title-wrapper">
-        <div class="title-large">FEATURES</div>
-        <h2 class="h3-heading">Le nostre features</h2>
+      <div
+        data-w-id="b9c346f1-75b3-80b3-301a-bbdf02b7efb1"
+        class="header-section"
+      >
+        <div class="container">
+          <div class="w-layout-grid hero-grid">
+            <div class="hero-content-wrapper">
+              <h1 class="hero-heading">
+                Stai al passo con la <span class="brand-span">genAI</span>
+              </h1>
+              <p class="hero-paragraph">
+                AI Club è la community per chi vuole guidare la AI
+                Transformation e restare aggiornato sulle ultime innovazioni nel
+                mondo dell&#x27;intelligenza artificiale generativa.
+              </p>
+              <div class="div-block">
+                <div class="hero-button-wrapper">
+                  <a href="#joinus" class="button w-button">Entra in AI Club</a>
+                </div>
+              </div>
+            </div>
+            <div class="hero-image-wrapper">
+              <img
+                src="images/Untitled-design-1.png"
+                loading="lazy"
+                width="318"
+                sizes="(max-width: 767px) 90vw, 600px"
+                alt=""
+                srcset="
+                  images/Untitled-design-1-p-500.png   500w,
+                  images/Untitled-design-1-p-800.png   800w,
+                  images/Untitled-design-1-p-1080.png 1080w,
+                  images/Untitled-design-1.png        1320w
+                "
+                class="phone"
+              /><img
+                src="images/61d39b4fd59ad9d3ed3b7498_image-3d-5-hero-coin-template.png"
+                loading="lazy"
+                alt=""
+                class="pattern-base"
+              /><img
+                src="images/vecteezy_3d-shape-triangle-pyramid-in-pastel-color_9345195.png"
+                loading="lazy"
+                sizes="(max-width: 991px) 90vw, 700px"
+                srcset="
+                  images/vecteezy_3d-shape-triangle-pyramid-in-pastel-color_9345195-p-500.png   500w,
+                  images/vecteezy_3d-shape-triangle-pyramid-in-pastel-color_9345195-p-800.png   800w,
+                  images/vecteezy_3d-shape-triangle-pyramid-in-pastel-color_9345195-p-1080.png 1080w,
+                  images/vecteezy_3d-shape-triangle-pyramid-in-pastel-color_9345195-p-1600.png 1600w,
+                  images/vecteezy_3d-shape-triangle-pyramid-in-pastel-color_9345195-p-2000.png 2000w,
+                  images/vecteezy_3d-shape-triangle-pyramid-in-pastel-color_9345195.png        2100w
+                "
+                alt=""
+                class="card-heart"
+              /><img
+                src="images/61d39b4fd59ad9ceff3b7490_image-3d-2-hero-coin-template.png"
+                loading="lazy"
+                alt=""
+                class="card-pen"
+              />
+            </div>
+          </div>
+          <div class="bottom-content hide">
+            <div class="bottom-content-wrapper">
+              <div class="avatar-row">
+                <div class="avatar-small">
+                  <img
+                    src="https://uploads-ssl.webflow.com/61b1691ce8e93c4dc52477f0/61b1777509ecf0c777772a6f_Avatar%2001.png"
+                    loading="lazy"
+                    alt=""
+                    class="avatar-image"
+                  />
+                </div>
+                <div class="avatar-small avatar-stack">
+                  <img
+                    src="https://uploads-ssl.webflow.com/61b1691ce8e93c4dc52477f0/61b17777ef3acd43d0bbb4e9_Avatar%2002.png"
+                    loading="lazy"
+                    alt=""
+                    class="avatar-image"
+                  />
+                </div>
+                <div class="avatar-small avatar-stack">
+                  <img
+                    src="https://uploads-ssl.webflow.com/61b1691ce8e93c4dc52477f0/61b17778d164d7f9f7c9c5b8_Avatar%2003.png"
+                    loading="lazy"
+                    alt=""
+                    class="avatar-image"
+                  />
+                </div>
+              </div>
+              <div class="text-detail">
+                Lorem ipsum dolor sit amet, consectetur <br />adipiscing elit,
+                sed do eiusmod tempor.
+              </div>
+            </div>
+            <div class="bottom-content-wrapper">
+              <div class="text-detail">
+                Lorem ipsum dolor sit amet, consectetur
+              </div>
+              <div class="logo-line"></div>
+              <div class="logo-wrapper">
+                <img
+                  src="https://uploads-ssl.webflow.com/61b1691ce8e93c4dc52477f0/61b175dbd1ffed24bf34ade7_Logo%201.svg"
+                  loading="lazy"
+                  alt=""
+                  class="company-logo"
+                /><img
+                  src="https://uploads-ssl.webflow.com/61b1691ce8e93c4dc52477f0/61b175dd1ddc83147ee1f503_Logo%202.svg"
+                  loading="lazy"
+                  alt=""
+                  class="company-logo"
+                /><img
+                  src="https://uploads-ssl.webflow.com/61b1691ce8e93c4dc52477f0/61b175deef3acd6626bb8e30_Logo%203.svg"
+                  loading="lazy"
+                  alt=""
+                  class="company-logo"
+                /><img
+                  src="https://uploads-ssl.webflow.com/61b1691ce8e93c4dc52477f0/61b175e009ecf083c777107a_Logo%204.svg"
+                  loading="lazy"
+                  alt=""
+                  class="company-logo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="https://uploads-ssl.webflow.com/61b1691ce8e93c4dc52477f0/61b1691ce8e93cb324247804_Header%20Blur.png"
+          loading="lazy"
+          alt=""
+          class="bloom-effect"
+        />
       </div>
-      <div class="w-layout-grid grid-feature-large">
-        <div class="large-feature-wrapper">
-          <div class="feature-icon-blue"><img src="https://uploads-ssl.webflow.com/61dcd559d1f942ad037732ed/61dcd83ec8725af5d04155f7_Feauture%20Small%2005.svg" loading="lazy" alt=""></div>
+    </div>
+    <div id="about" class="section is-about">
+      <div class="container-2">
+        <div class="w-layout-grid grid-content">
+          <div
+            id="w-node-_6017de3c-9b4a-57ec-fc9d-90de22efa7fd-6eebd475"
+            class="content-wrapper"
+          >
+            <h2 class="h3-heading is-azienda">
+              Una community esclusiva di formazione continua su AI.
+            </h2>
+            <p class="paragraph-large">
+              Rimani aggiornato. Chiedi supporto agli esperti. Connettiti con
+              altri leader del settore.
+            </p>
+            <div class="w-layout-grid grid-content-feature hide">
+              <div class="feature-wrapper-horizontal">
+                <div class="feature-icon-circle">
+                  <img
+                    src="https://uploads-ssl.webflow.com/61dcbec83326c65ac3eb03fa/61dcc84bbd7fa88dd37a2114_Feature%20Icon%2001.svg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <div class="heading-large">Rimani aggiornato</div>
+                </div>
+              </div>
+              <div class="feature-wrapper-horizontal">
+                <div class="feature-icon-circle">
+                  <img
+                    src="https://uploads-ssl.webflow.com/61dcbec83326c65ac3eb03fa/61dcc84bbd7fa8b8767a2115_Feature%20Icon%2003.svg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <div class="heading-large">Lorem ipsum dolor sit</div>
+                </div>
+              </div>
+              <div
+                id="w-node-c6000b2c-c85c-d4fe-9e9f-867820cf316b-6eebd475"
+                class="feature-wrapper-horizontal"
+              >
+                <div class="feature-icon-circle">
+                  <img
+                    src="https://uploads-ssl.webflow.com/61dcbec83326c65ac3eb03fa/61dcc84bbd7fa8b8767a2115_Feature%20Icon%2003.svg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <div class="heading-large no-margin">
+                    Lorem ipsum dolor sit
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div>
-            <div class="heading-large feature-name">Sessioni live <br>settimanali</div>
-            <p class="paragraph-standard is-feature">Eventi dedicati con aggiornamenti mensili, casi d’uso, e strumenti pratici.</p>
-          </div>
-        </div>
-        <div class="large-feature-wrapper">
-          <div class="feature-icon-blue"><img src="https://uploads-ssl.webflow.com/61dcd559d1f942ad037732ed/61dcd83ec8725a08144155f8_Feauture%20Small%2003.svg" loading="lazy" alt=""></div>
-          <div>
-            <div class="heading-large feature-name">Canale di supporto diretto</div>
-            <p class="paragraph-standard is-feature">Un canale con un team di esperti di AI generativa per aiutarti su qualsiasi cosa.</p>
-          </div>
-        </div>
-        <div class="large-feature-wrapper">
-          <div class="feature-icon-blue"><img src="https://uploads-ssl.webflow.com/61dcd559d1f942ad037732ed/61dcd83ec8725af7114155f4_Feauture%20Small%2001.svg" loading="lazy" alt=""></div>
-          <div>
-            <div class="heading-large feature-name">Network di professionisti</div>
-            <p class="paragraph-standard is-feature">Confrontati con altri professionisti che stanno guidando la trasformazione AI.</p>
-          </div>
-        </div>
-        <div class="large-feature-wrapper">
-          <div class="feature-icon-blue"><img src="https://uploads-ssl.webflow.com/61dcd559d1f942ad037732ed/61dcd83ec8725aa9d84155f3_Feauture%20Small%2002.svg" loading="lazy" alt=""></div>
-          <div>
-            <div class="heading-large feature-name">Contenuti on-demand</div>
-            <p class="paragraph-standard is-feature">Una libreria di contenuti on-demand tra cui video, articoli e news per rimanere sempre aggiornato.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section hide">
-    <div class="content-container">
-      <div class="w-layout-grid content-grid">
-        <a href="https://www.figma.com/file/sETPiY582i2jIaipuvSBLT/Assets?node-id=0%3A1" target="_blank" class="content-image-wrap w-inline-block"><img src="images/svgviewer-output---2022-04-27T125620.610.svg" loading="lazy" style="opacity:0" data-w-id="3ab3b2c1-cf07-9de7-fcf0-481042428434" alt="Photo" class="content-image"></a>
-        <div class="content-wrapper-2">
-          <div class="content-header-line"></div>
-          <h3 class="h3-heading">Lorem ipsum dolor sit amet.</h3>
-          <p class="content-paragraph">Image on the right is linked to a Figma file where you can duplicate and edit the image. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla massa nisi</p>
-        </div>
-      </div>
-      <div class="content-numbers">
-        <div class="content-number-wrap">
-          <div class="content-number">1,500</div>
-          <div class="text-number">Lorem ipsum dolor</div>
-        </div>
-        <div class="content-number-wrap">
-          <div class="content-number">10,000+</div>
-          <div class="text-number">Lorem ipsum dolor</div>
-        </div>
-        <div class="content-number-wrap">
-          <div class="content-number">200+</div>
-          <div class="text-number">Lorem ipsum dolor</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="aziende" class="section">
-    <div class="container-2">
-      <div class="blog-horizontal-wrapper">
-        <div class="blog-title-wrapper s-center">
-          <h3 class="h3-heading s-center">Per le aziende</h3>
-          <p class="paragraph-large s-center">Trasforma la tua azienda con l&#x27;aiuto della nostra community. AI Club ti fornisce le risorse e le connessioni necessarie per implementare strategie AI di successo e ottenere risultati concreti.</p>
-          <div class="button-spacer s-center">
-            <a href="per-aziende.html" class="button w-button">Entra in AI Club</a>
-          </div>
-        </div>
-        <div class="w-layout-grid grid-blog-small">
-          <a href="#" class="blog-wrapper hide w-inline-block">
-            <div class="benefit-icon-wrapper"><img src="images/icons8-innovation-80.png" loading="lazy" alt="" class="benefit-icon"></div>
-            <div class="blog-content">
-              <div class="blog-heading">Accelera l&#x27;Innovazione</div>
-            </div>
-          </a>
-          <a id="w-node-_13d7b670-ff7b-5710-8e31-abe4fe42163e-6eebd475" href="#" class="blog-wrapper w-inline-block">
-            <div class="blog-wrapper-image"><img src="images/Frame-25.png" loading="lazy" alt=""></div>
-            <div class="blog-content">
-              <div class="blog-heading"><strong>Accelera l&#x27;Innovazione</strong></div>
-            </div>
-          </a>
-          <a id="w-node-_4d9fadd3-52d5-1dc8-54df-65b7c9d62fa1-6eebd475" href="#" class="blog-wrapper w-inline-block">
-            <div class="blog-wrapper-image"><img src="images/Frame-26.png" loading="lazy" alt=""></div>
-            <div class="blog-content">
-              <div class="blog-heading">Rimani competitivo</div>
-            </div>
-          </a>
-          <a id="w-node-_2d30a764-bec9-2754-30bf-e8b7278b54f5-6eebd475" href="#" class="blog-wrapper w-inline-block">
-            <div class="blog-wrapper-image"><img src="images/Frame-27.png" loading="lazy" alt=""></div>
-            <div class="blog-content">
-              <div class="blog-heading">Risolvi problemi specifici</div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="individui" class="section">
-    <div class="container-2">
-      <div class="blog-horizontal-wrapper is-reverse">
-        <div class="w-layout-grid grid-blog-small is-xs">
-          <a href="#" class="blog-wrapper hide w-inline-block">
-            <div class="benefit-icon-wrapper"><img src="images/icons8-innovation-80.png" loading="lazy" alt="" class="benefit-icon"></div>
-            <div class="blog-content">
-              <div class="blog-heading">Accelera l&#x27;Innovazione</div>
-            </div>
-          </a>
-          <a id="w-node-bb72a608-450b-36f5-e4c4-0906781db57f-6eebd475" href="#" class="blog-wrapper w-inline-block">
-            <div class="blog-wrapper-image"><img src="images/Frame-28.png" loading="lazy" alt=""></div>
-            <div class="blog-content">
-              <div class="blog-heading"><strong>Rimani aggiornato</strong></div>
-            </div>
-          </a>
-          <a id="w-node-bb72a608-450b-36f5-e4c4-0906781db586-6eebd475" href="#" class="blog-wrapper w-inline-block">
-            <div class="blog-wrapper-image"><img src="images/Frame-29.png" loading="lazy" alt=""></div>
-            <div class="blog-content">
-              <div class="blog-heading">Espandi il tuo network</div>
-            </div>
-          </a>
-          <a id="w-node-_818fef03-7c5a-58ee-77b1-7b959b736bf2-6eebd475" href="#" class="blog-wrapper w-inline-block">
-            <div class="blog-wrapper-image"><img src="images/Frame-30.png" loading="lazy" alt=""></div>
-            <div class="blog-content">
-              <div class="blog-heading">Ottimizza il tuo lavoro</div>
-            </div>
-          </a>
-        </div>
-        <div class="blog-title-wrapper is-reverse s-center">
-          <h3 class="h3-heading s-center">Per individui</h3>
-          <p class="paragraph-large s-center">Sei un professionista appassionato di AI? Rimani al passo con le ultime innovazioni, partecipa a sessioni di formazione esclusive, e connettiti con un network di esperti del settore. La nostra community ti aiuterà a raggiungere i tuoi obiettivi.</p>
-          <div class="button-spacer s-center">
-            <a href="per-individui.html" class="button w-button">Entra in AI Club</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="join-section">
-    <div class="price-container">
-      <div class="title-wrapper-2">
-        <h3 id="joinus" class="h3-heading">Unisciti alla community che sta plasmando il futuro dell&#x27;AI</h3>
-        <p class="azienda-par">Azienda? Prenota uno slot, ti mostriamo come usare al meglio AI Club e ti spieghiamo come unirti</p>
-        <p class="individuo-par">Individuo? Presto potrai unirti anche tu. Aggiungiti alla lista d&#x27;attesa, ti contattiamo appena apriamo le iscrizioni</p>
-      </div>
-      <div class="toggle-wrapper">
-        <div class="plan-type">azienda</div>
-        <div data-w-id="671dd605-27d8-2132-2d39-fd1480f93967" class="toggle-price">
-          <div class="toggle-round"></div>
-        </div>
-        <div class="plan-type">individuo</div>
-      </div>
-      <div class="w-layout-grid pricing-grid">
-        <div class="blocco-toggle">
-          <div class="blocco-azienda">
-            <h2 class="h3-heading is-azienda is-center">Prenota uno slot, ti spieghiamo come entrare in AI Club</h2>
-            <div class="full-width w-embed w-script"><!--  Cal inline embed code begins  -->
-              <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline"></div>
-              <script type="text/javascript">
-  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-Cal("init", "15min", {origin:"https://cal.com"});
-  Cal.ns["15min"]("inline", {
-	elementOrSelector:"#my-cal-inline",
-	calLink: "patrizia-berchi/15min",
-	layout: "month_view"
-  });
-  Cal.ns["15min"]("ui", {"styles":{"branding":{"brandColor":"#000000"}},"hideEventTypeDetails":false,"layout":"month_view"});
-  </script>
-              <!--  Cal inline embed code ends  -->
-            </div>
-          </div>
-          <div class="footer-form-two blocco-individuo w-form">
-            <form id="wf-form-Form-Waiting-List" name="wf-form-Form-Waiting-List" data-name="Form Waiting List" method="get" class="footer-form-container-two" data-wf-page-id="66cde38023387d736eebd475" data-wf-element-id="9516e6c7-52a5-bb06-4557-d2ba38b81cb0">
-              <div>
-                <h2 class="h3-heading is-individuo">Aggiungiti alla lista d&#x27;attesa</h2>
+            <div class="image-block-small">
+              <img
+                src="images/h1-ezgif.com-optimize.gif"
+                loading="lazy"
+                alt=""
+                class="image-cover"
+              />
+              <div class="content-background"></div>
+              <div class="card-ui-graph">
+                <div class="graph-svg w-embed">
+                  <!--  Replace the fill="#HEX" with your own color hexs. Go you little coder you!  -->
+                  <svg
+                    width="86"
+                    height="86"
+                    viewbox="0 0 86 86"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M64.7652 80.0847C72.8927 75.3146 79.2282 68.0066 82.7971 59.2846C86.3661 50.5625 86.9709 40.9096 84.5186 31.8103C82.0662 22.711 76.6925 14.6693 69.2239 8.92203C61.7553 3.17475 52.6054 0.0401722 43.1815 0.000383263L43.0719 25.9718C46.8038 25.9876 50.4272 27.2289 53.3849 29.5048C56.3425 31.7808 58.4705 34.9654 59.4417 38.5688C60.4128 42.1722 60.1733 45.9948 58.76 49.4488C57.3467 52.9028 54.8378 55.7969 51.6192 57.6859L64.7652 80.0847Z"
+                      fill="#000000"
+                    ></path>
+                    <path
+                      d="M43.7921 0.0072956C37.0833 -0.116301 30.4388 1.33181 24.3899 4.2358C18.341 7.13979 13.0556 11.4191 8.95655 16.7313C4.8575 22.0436 2.05851 28.2414 0.783477 34.829C-0.491554 41.4166 -0.207242 48.2112 1.61367 54.6693C3.43458 61.1273 6.74156 67.0696 11.2701 72.0209C15.7986 76.9721 21.423 80.7949 27.6933 83.1834C33.9637 85.5719 40.706 86.4599 47.381 85.7762C54.0559 85.0926 60.4783 82.8564 66.1343 79.2464L52.1614 57.3539C49.9215 58.7835 47.3782 59.669 44.7349 59.9397C42.0916 60.2105 39.4216 59.8588 36.9384 58.913C34.4553 57.9671 32.228 56.4532 30.4347 54.4925C28.6414 52.5318 27.3318 50.1786 26.6107 47.6211C25.8896 45.0637 25.777 42.373 26.2819 39.7642C26.7868 37.1555 27.8953 34.7011 29.5185 32.5974C31.1418 30.4937 33.2348 28.7991 35.6302 27.6491C38.0257 26.4991 40.657 25.9256 43.3137 25.9745L43.7921 0.0072956Z"
+                      fill="#4c6fb2"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="card-heading">$15,200.00</div>
+                  <p class="card-text">Total Portofolio</p>
+                </div>
               </div>
-              <div class="waitlist-email-form"><input class="footer-form-input w-input" maxlength="256" name="Wailist-Form" data-name="Wailist Form" aria-label="Enter your email" placeholder="Aggiungi la tua email" type="email" id="Wailist-Form" required=""><input type="submit" data-wait="Invio..." class="button-primary footer-form-button w-button" value="Mettimi in lista"></div>
-            </form>
-            <div class="w-form-done">
-              <div>Grazie! Ti avvisiamo appena le iscrizioni per singoli saranno aperte</div>
-            </div>
-            <div class="w-form-fail">
-              <div>Oops! Qualcosa e&#x27; andato storto</div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div id="FAQ" class="section hide">
-    <div class="container-regular">
-      <div class="w-layout-grid faq-grid-section">
-        <div id="w-node-_9b1d132b-4e7e-4025-5afe-0b0d23e43fc2-6eebd475">
-          <div>
-            <div class="title-large">Lorem ipsum dolor sit</div>
+    <div id="features" class="section bg-brown">
+      <div class="container-large">
+        <div class="title-wrapper">
+          <div class="title-large">FEATURES</div>
+          <h2 class="h3-heading">Le nostre features</h2>
+        </div>
+        <div class="w-layout-grid grid-feature-large">
+          <div class="large-feature-wrapper">
+            <div class="feature-icon-blue">
+              <img
+                src="https://uploads-ssl.webflow.com/61dcd559d1f942ad037732ed/61dcd83ec8725af5d04155f7_Feauture%20Small%2005.svg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div>
+              <div class="heading-large feature-name">
+                Sessioni live <br />settimanali
+              </div>
+              <p class="paragraph-standard is-feature">
+                Eventi dedicati con aggiornamenti mensili, casi d’uso, e
+                strumenti pratici.
+              </p>
+            </div>
+          </div>
+          <div class="large-feature-wrapper">
+            <div class="feature-icon-blue">
+              <img
+                src="https://uploads-ssl.webflow.com/61dcd559d1f942ad037732ed/61dcd83ec8725a08144155f8_Feauture%20Small%2003.svg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div>
+              <div class="heading-large feature-name">
+                Canale di supporto diretto
+              </div>
+              <p class="paragraph-standard is-feature">
+                Un canale con un team di esperti di AI generativa per aiutarti
+                su qualsiasi cosa.
+              </p>
+            </div>
+          </div>
+          <div class="large-feature-wrapper">
+            <div class="feature-icon-blue">
+              <img
+                src="https://uploads-ssl.webflow.com/61dcd559d1f942ad037732ed/61dcd83ec8725af7114155f4_Feauture%20Small%2001.svg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div>
+              <div class="heading-large feature-name">
+                Network di professionisti
+              </div>
+              <p class="paragraph-standard is-feature">
+                Confrontati con altri professionisti che stanno guidando la
+                trasformazione AI.
+              </p>
+            </div>
+          </div>
+          <div class="large-feature-wrapper">
+            <div class="feature-icon-blue">
+              <img
+                src="https://uploads-ssl.webflow.com/61dcd559d1f942ad037732ed/61dcd83ec8725aa9d84155f3_Feauture%20Small%2002.svg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div>
+              <div class="heading-large feature-name">Contenuti on-demand</div>
+              <p class="paragraph-standard is-feature">
+                Una libreria di contenuti on-demand tra cui video, articoli e
+                news per rimanere sempre aggiornato.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section hide">
+      <div class="content-container">
+        <div class="w-layout-grid content-grid">
+          <a
+            href="https://www.figma.com/file/sETPiY582i2jIaipuvSBLT/Assets?node-id=0%3A1"
+            target="_blank"
+            class="content-image-wrap w-inline-block"
+            ><img
+              src="images/svgviewer-output---2022-04-27T125620.610.svg"
+              loading="lazy"
+              style="opacity: 0"
+              data-w-id="3ab3b2c1-cf07-9de7-fcf0-481042428434"
+              alt="Photo"
+              class="content-image"
+          /></a>
+          <div class="content-wrapper-2">
+            <div class="content-header-line"></div>
             <h3 class="h3-heading">Lorem ipsum dolor sit amet.</h3>
-            <p class="paragraph-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec justo finibus, tempus eiden dolor ipsum.</p>
+            <p class="content-paragraph">
+              Image on the right is linked to a Figma file where you can
+              duplicate and edit the image. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Nulla massa nisi
+            </p>
           </div>
-          <div class="placeholder-faq"><img src="images/Screenshot-2022-04-26-at-10.16.52-PM.png" loading="lazy" sizes="100vw" srcset="images/Screenshot-2022-04-26-at-10.16.52-PM-p-500.png 500w, images/Screenshot-2022-04-26-at-10.16.52-PM-p-800.png 800w, images/Screenshot-2022-04-26-at-10.16.52-PM-p-1080.png 1080w, images/Screenshot-2022-04-26-at-10.16.52-PM-p-1600.png 1600w, images/Screenshot-2022-04-26-at-10.16.52-PM-p-2000.png 2000w, images/Screenshot-2022-04-26-at-10.16.52-PM.png 2056w" alt="" class="image-cover-2"></div>
         </div>
-        <div id="w-node-_9b1d132b-4e7e-4025-5afe-0b0d23e43fcc-6eebd475">
-          <div class="w-layout-grid grid-one-column">
-            <div data-delay="0" data-hover="false" class="faq-item-line w-dropdown">
-              <div class="faq-toggle w-dropdown-toggle">
-                <div class="faq-title-wrapper">
-                  <div class="heading-large faq-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                  <div class="faq-icon-square">
-                    <div class="faq-arrow w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.9998 15L7.75684 10.757L9.17184 9.34302L11.9998 12.172L14.8278 9.34302L16.2428 10.757L11.9998 15Z" fill="currentColor"></path>
-                      </svg></div>
-                  </div>
-                </div>
-              </div>
-              <nav class="faq-content w-dropdown-list">
-                <div class="faq-content-wrapper">
-                  <p class="paragraph-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                </div>
-              </nav>
+        <div class="content-numbers">
+          <div class="content-number-wrap">
+            <div class="content-number">1,500</div>
+            <div class="text-number">Lorem ipsum dolor</div>
+          </div>
+          <div class="content-number-wrap">
+            <div class="content-number">10,000+</div>
+            <div class="text-number">Lorem ipsum dolor</div>
+          </div>
+          <div class="content-number-wrap">
+            <div class="content-number">200+</div>
+            <div class="text-number">Lorem ipsum dolor</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="aziende" class="section">
+      <div class="container-2">
+        <div class="blog-horizontal-wrapper">
+          <div class="blog-title-wrapper s-center">
+            <h3 class="h3-heading s-center">Per le aziende</h3>
+            <p class="paragraph-large s-center">
+              Trasforma la tua azienda con l&#x27;aiuto della nostra community.
+              AI Club ti fornisce le risorse e le connessioni necessarie per
+              implementare strategie AI di successo e ottenere risultati
+              concreti.
+            </p>
+            <div class="button-spacer s-center">
+              <a href="per-aziende.html" class="button w-button"
+                >Entra in AI Club</a
+              >
             </div>
-            <div data-delay="0" data-hover="false" class="faq-item-line w-dropdown">
-              <div class="faq-toggle w-dropdown-toggle">
-                <div class="faq-title-wrapper">
-                  <div class="heading-large faq-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                  <div class="faq-icon-square">
-                    <div class="faq-arrow w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.9998 15L7.75684 10.757L9.17184 9.34302L11.9998 12.172L14.8278 9.34302L16.2428 10.757L11.9998 15Z" fill="currentColor"></path>
-                      </svg></div>
-                  </div>
+          </div>
+          <div class="w-layout-grid grid-blog-small">
+            <a href="#" class="blog-wrapper hide w-inline-block">
+              <div class="benefit-icon-wrapper">
+                <img
+                  src="images/icons8-innovation-80.png"
+                  loading="lazy"
+                  alt=""
+                  class="benefit-icon"
+                />
+              </div>
+              <div class="blog-content">
+                <div class="blog-heading">Accelera l&#x27;Innovazione</div>
+              </div>
+            </a>
+            <a
+              id="w-node-_13d7b670-ff7b-5710-8e31-abe4fe42163e-6eebd475"
+              href="#"
+              class="blog-wrapper w-inline-block"
+            >
+              <div class="blog-wrapper-image">
+                <img src="images/Frame-25.png" loading="lazy" alt="" />
+              </div>
+              <div class="blog-content">
+                <div class="blog-heading">
+                  <strong>Accelera l&#x27;Innovazione</strong>
                 </div>
               </div>
-              <nav class="faq-content w-dropdown-list">
-                <div class="faq-content-wrapper">
-                  <p class="paragraph-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                </div>
-              </nav>
-            </div>
-            <div data-delay="0" data-hover="false" class="faq-item-line w-dropdown">
-              <div class="faq-toggle w-dropdown-toggle">
-                <div class="faq-title-wrapper">
-                  <div class="heading-large faq-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                  <div class="faq-icon-square">
-                    <div class="faq-arrow w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.9998 15L7.75684 10.757L9.17184 9.34302L11.9998 12.172L14.8278 9.34302L16.2428 10.757L11.9998 15Z" fill="currentColor"></path>
-                      </svg></div>
-                  </div>
+            </a>
+            <a
+              id="w-node-_4d9fadd3-52d5-1dc8-54df-65b7c9d62fa1-6eebd475"
+              href="#"
+              class="blog-wrapper w-inline-block"
+            >
+              <div class="blog-wrapper-image">
+                <img src="images/Frame-26.png" loading="lazy" alt="" />
+              </div>
+              <div class="blog-content">
+                <div class="blog-heading">Rimani competitivo</div>
+              </div>
+            </a>
+            <a
+              id="w-node-_2d30a764-bec9-2754-30bf-e8b7278b54f5-6eebd475"
+              href="#"
+              class="blog-wrapper w-inline-block"
+            >
+              <div class="blog-wrapper-image">
+                <img src="images/Frame-27.png" loading="lazy" alt="" />
+              </div>
+              <div class="blog-content">
+                <div class="blog-heading">Risolvi problemi specifici</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="individui" class="section">
+      <div class="container-2">
+        <div class="blog-horizontal-wrapper is-reverse">
+          <div class="w-layout-grid grid-blog-small is-xs">
+            <a href="#" class="blog-wrapper hide w-inline-block">
+              <div class="benefit-icon-wrapper">
+                <img
+                  src="images/icons8-innovation-80.png"
+                  loading="lazy"
+                  alt=""
+                  class="benefit-icon"
+                />
+              </div>
+              <div class="blog-content">
+                <div class="blog-heading">Accelera l&#x27;Innovazione</div>
+              </div>
+            </a>
+            <a
+              id="w-node-bb72a608-450b-36f5-e4c4-0906781db57f-6eebd475"
+              href="#"
+              class="blog-wrapper w-inline-block"
+            >
+              <div class="blog-wrapper-image">
+                <img src="images/Frame-28.png" loading="lazy" alt="" />
+              </div>
+              <div class="blog-content">
+                <div class="blog-heading">
+                  <strong>Rimani aggiornato</strong>
                 </div>
               </div>
-              <nav class="faq-content w-dropdown-list">
-                <div class="faq-content-wrapper">
-                  <p class="paragraph-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                </div>
-              </nav>
-            </div>
-            <div data-delay="0" data-hover="false" class="faq-item-line w-dropdown">
-              <div class="faq-toggle w-dropdown-toggle">
-                <div class="faq-title-wrapper">
-                  <div class="heading-large faq-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                  <div class="faq-icon-square">
-                    <div class="faq-arrow w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.9998 15L7.75684 10.757L9.17184 9.34302L11.9998 12.172L14.8278 9.34302L16.2428 10.757L11.9998 15Z" fill="currentColor"></path>
-                      </svg></div>
-                  </div>
-                </div>
+            </a>
+            <a
+              id="w-node-bb72a608-450b-36f5-e4c4-0906781db586-6eebd475"
+              href="#"
+              class="blog-wrapper w-inline-block"
+            >
+              <div class="blog-wrapper-image">
+                <img src="images/Frame-29.png" loading="lazy" alt="" />
               </div>
-              <nav class="faq-content w-dropdown-list">
-                <div class="faq-content-wrapper">
-                  <p class="paragraph-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                </div>
-              </nav>
-            </div>
-            <div data-delay="0" data-hover="false" class="faq-item-line w-dropdown">
-              <div class="faq-toggle w-dropdown-toggle">
-                <div class="faq-title-wrapper">
-                  <div class="heading-large faq-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                  <div class="faq-icon-square">
-                    <div class="faq-arrow w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.9998 15L7.75684 10.757L9.17184 9.34302L11.9998 12.172L14.8278 9.34302L16.2428 10.757L11.9998 15Z" fill="currentColor"></path>
-                      </svg></div>
-                  </div>
-                </div>
+              <div class="blog-content">
+                <div class="blog-heading">Espandi il tuo network</div>
               </div>
-              <nav class="faq-content w-dropdown-list">
-                <div class="faq-content-wrapper">
-                  <p class="paragraph-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                </div>
-              </nav>
-            </div>
-            <div data-delay="0" data-hover="false" class="faq-item-line w-dropdown">
-              <div class="faq-toggle w-dropdown-toggle">
-                <div class="faq-title-wrapper">
-                  <div class="heading-large faq-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                  <div class="faq-icon-square">
-                    <div class="faq-arrow w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.9998 15L7.75684 10.757L9.17184 9.34302L11.9998 12.172L14.8278 9.34302L16.2428 10.757L11.9998 15Z" fill="currentColor"></path>
-                      </svg></div>
-                  </div>
-                </div>
+            </a>
+            <a
+              id="w-node-_818fef03-7c5a-58ee-77b1-7b959b736bf2-6eebd475"
+              href="#"
+              class="blog-wrapper w-inline-block"
+            >
+              <div class="blog-wrapper-image">
+                <img src="images/Frame-30.png" loading="lazy" alt="" />
               </div>
-              <nav class="faq-content w-dropdown-list">
-                <div class="faq-content-wrapper">
-                  <p class="paragraph-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                </div>
-              </nav>
+              <div class="blog-content">
+                <div class="blog-heading">Ottimizza il tuo lavoro</div>
+              </div>
+            </a>
+          </div>
+          <div class="blog-title-wrapper is-reverse s-center">
+            <h3 class="h3-heading s-center">Per individui</h3>
+            <p class="paragraph-large s-center">
+              Sei un professionista appassionato di AI? Rimani al passo con le
+              ultime innovazioni, partecipa a sessioni di formazione esclusive,
+              e connettiti con un network di esperti del settore. La nostra
+              community ti aiuterà a raggiungere i tuoi obiettivi.
+            </p>
+            <div class="button-spacer s-center">
+              <a href="per-individui.html" class="button w-button"
+                >Entra in AI Club</a
+              >
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="section-footer">
-    <div class="container-large-2">
-      <div class="footer-content-wrapper">
-        <div class="footer-brand">
-          <a href="#" class="footer-logo-mark w-inline-block"><img src="images/AICLUB_LOGOTIPO3.png" loading="lazy" sizes="(max-width: 479px) 90vw, 100px" srcset="images/AICLUB_LOGOTIPO3-p-500.png 500w, images/AICLUB_LOGOTIPO3.png 1018w" alt="Logo" class="footer-logo"></a>
+    <div class="join-section">
+      <div class="price-container">
+        <div class="title-wrapper-2">
+          <h3 id="joinus" class="h3-heading">
+            Unisciti alla community che sta plasmando il futuro dell&#x27;AI
+          </h3>
+          <p class="azienda-par">
+            Azienda? Prenota uno slot, ti mostriamo come usare al meglio AI Club
+            e ti spieghiamo come unirti
+          </p>
+          <p class="individuo-par">
+            Individuo? Presto potrai unirti anche tu. Aggiungiti alla lista
+            d&#x27;attesa, ti contattiamo appena apriamo le iscrizioni
+          </p>
         </div>
-        <div class="footer-links">
-          <div class="footer-menu">
-            <a href="#about" class="footer-link w-inline-block">
-              <div>About</div>
-            </a>
-            <div class="footer-line-small"></div>
-            <a href="#features" class="footer-link w-inline-block">
-              <div>Features</div>
-            </a>
-            <div class="footer-line-small"></div>
-            <a href="per-aziende.html" class="footer-link w-inline-block">
-              <div>Aziende</div>
-            </a>
-            <div class="footer-line-small"></div>
-            <a href="per-individui.html" class="footer-link w-inline-block">
-              <div>Individui</div>
-            </a>
-            <div class="footer-line-small"></div>
-            <a href="privacy.html" class="footer-link w-inline-block">
-              <div>Privacy</div>
-            </a>
-            <div class="footer-line-small"></div>
-            <a href="termini-e-condizioni.html" class="footer-link w-inline-block">
-              <div>Terms</div>
-            </a>
+        <div class="toggle-wrapper">
+          <div class="plan-type">azienda</div>
+          <div
+            data-w-id="671dd605-27d8-2132-2d39-fd1480f93967"
+            class="toggle-price"
+          >
+            <div class="toggle-round"></div>
           </div>
-          <div class="footer-social-row-large">
-            <div class="w-layout-grid footer-social-grid">
-              <a href="https://www.youtube.com/@datapizza" target="_blank" class="footer-social-link w-inline-block">
-                <div class="icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="w-full h-full" viewbox="0 0 30 30">
-                    <path d="M 15 4 C 10.814 4 5.3808594 5.0488281 5.3808594 5.0488281 L 5.3671875 5.0644531 C 3.4606632 5.3693645 2 7.0076245 2 9 L 2 15 L 2 15.001953 L 2 21 L 2 21.001953 A 4 4 0 0 0 5.3769531 24.945312 L 5.3808594 24.951172 C 5.3808594 24.951172 10.814 26.001953 15 26.001953 C 19.186 26.001953 24.619141 24.951172 24.619141 24.951172 L 24.621094 24.949219 A 4 4 0 0 0 28 21.001953 L 28 21 L 28 15.001953 L 28 15 L 28 9 A 4 4 0 0 0 24.623047 5.0546875 L 24.619141 5.0488281 C 24.619141 5.0488281 19.186 4 15 4 z M 12 10.398438 L 20 15 L 12 19.601562 L 12 10.398438 z"></path>
-                  </svg></div>
-              </a>
-              <a href="https://www.instagram.com/datapizza" target="_blank" class="footer-social-link w-inline-block">
-                <div class="icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="w-full h-full" viewbox="0 0 30 30">
-                    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
-                  </svg></div>
-              </a>
-              <a href="https://www.linkedin.com/company/datapizza/posts/?feedView=all" class="footer-social-link w-inline-block">
-                <div class="icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="w-full h-full" viewbox="0 0 30 30">
-                    <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"></path>
-                  </svg></div>
-              </a>
+          <div class="plan-type">individuo</div>
+        </div>
+        <div class="w-layout-grid pricing-grid">
+          <div class="blocco-toggle">
+            <div class="blocco-azienda">
+              <h2 class="h3-heading is-azienda is-center">
+                Prenota uno slot, ti spieghiamo come entrare in AI Club
+              </h2>
+              <div class="full-width w-embed w-script">
+                <!--  Cal inline embed code begins  -->
+                <div
+                  style="width: 100%; height: 100%; overflow: scroll"
+                  id="my-cal-inline"
+                ></div>
+                <script type="text/javascript">
+                  (function (C, A, L) {
+                    let p = function (a, ar) {
+                      a.q.push(ar);
+                    };
+                    let d = C.document;
+                    C.Cal =
+                      C.Cal ||
+                      function () {
+                        let cal = C.Cal;
+                        let ar = arguments;
+                        if (!cal.loaded) {
+                          cal.ns = {};
+                          cal.q = cal.q || [];
+                          d.head.appendChild(d.createElement("script")).src = A;
+                          cal.loaded = true;
+                        }
+                        if (ar[0] === L) {
+                          const api = function () {
+                            p(api, arguments);
+                          };
+                          const namespace = ar[1];
+                          api.q = api.q || [];
+                          if (typeof namespace === "string") {
+                            cal.ns[namespace] = cal.ns[namespace] || api;
+                            p(cal.ns[namespace], ar);
+                            p(cal, ["initNamespace", namespace]);
+                          } else p(cal, ar);
+                          return;
+                        }
+                        p(cal, ar);
+                      };
+                  })(window, "https://app.cal.com/embed/embed.js", "init");
+                  Cal("init", "15min", { origin: "https://cal.com" });
+                  Cal.ns["15min"]("inline", {
+                    elementOrSelector: "#my-cal-inline",
+                    calLink: "patrizia-berchi/15min",
+                    layout: "month_view",
+                  });
+                  Cal.ns["15min"]("ui", {
+                    styles: { branding: { brandColor: "#000000" } },
+                    hideEventTypeDetails: false,
+                    layout: "month_view",
+                  });
+                </script>
+                <!--  Cal inline embed code ends  -->
+              </div>
+            </div>
+            <div class="footer-form-two blocco-individuo w-form">
+              <form
+                id="wf-form-Form-Waiting-List"
+                name="wf-form-Form-Waiting-List"
+                data-name="Form Waiting List"
+                method="get"
+                action="https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec"
+                class="footer-form-container-two"
+                data-wf-page-id="66cde38023387d736eebd475"
+                data-wf-element-id="9516e6c7-52a5-bb06-4557-d2ba38b81cb0"
+              >
+                <div>
+                  <h2 class="h3-heading is-individuo">
+                    Aggiungiti alla lista d'attesa
+                  </h2>
+                </div>
+                <div class="waitlist-email-form">
+                  <input
+                    class="footer-form-input w-input"
+                    maxlength="256"
+                    name="Wailist-Form"
+                    data-name="Wailist Form"
+                    aria-label="Enter your email"
+                    placeholder="Aggiungi la tua email"
+                    type="email"
+                    id="Wailist-Form"
+                    required=""
+                  />
+                  <input
+                    type="submit"
+                    data-wait="Invio..."
+                    class="button-primary footer-form-button w-button"
+                    value="Mettimi in lista"
+                  />
+                </div>
+              </form>
+              <div class="w-form-done">
+                <div>
+                  Grazie! Ti avvisiamo appena le iscrizioni per singoli saranno
+                  aperte
+                </div>
+              </div>
+              <div class="w-form-fail">
+                <div>Oops! Qualcosa è andato storto</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=66cde38023387d736eebd3f6" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="js/webflow.js" type="text/javascript"></script>
-</body>
+    <div id="FAQ" class="section hide">
+      <div class="container-regular">
+        <div class="w-layout-grid faq-grid-section">
+          <div id="w-node-_9b1d132b-4e7e-4025-5afe-0b0d23e43fc2-6eebd475">
+            <div>
+              <div class="title-large">Lorem ipsum dolor sit</div>
+              <h3 class="h3-heading">Lorem ipsum dolor sit amet.</h3>
+              <p class="paragraph-large">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                nec justo finibus, tempus eiden dolor ipsum.
+              </p>
+            </div>
+            <div class="placeholder-faq">
+              <img
+                src="images/Screenshot-2022-04-26-at-10.16.52-PM.png"
+                loading="lazy"
+                sizes="100vw"
+                srcset="
+                  images/Screenshot-2022-04-26-at-10.16.52-PM-p-500.png   500w,
+                  images/Screenshot-2022-04-26-at-10.16.52-PM-p-800.png   800w,
+                  images/Screenshot-2022-04-26-at-10.16.52-PM-p-1080.png 1080w,
+                  images/Screenshot-2022-04-26-at-10.16.52-PM-p-1600.png 1600w,
+                  images/Screenshot-2022-04-26-at-10.16.52-PM-p-2000.png 2000w,
+                  images/Screenshot-2022-04-26-at-10.16.52-PM.png        2056w
+                "
+                alt=""
+                class="image-cover-2"
+              />
+            </div>
+          </div>
+          <div id="w-node-_9b1d132b-4e7e-4025-5afe-0b0d23e43fcc-6eebd475">
+            <div class="w-layout-grid grid-one-column">
+              <div
+                data-delay="0"
+                data-hover="false"
+                class="faq-item-line w-dropdown"
+              >
+                <div class="faq-toggle w-dropdown-toggle">
+                  <div class="faq-title-wrapper">
+                    <div class="heading-large faq-title">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                    <div class="faq-icon-square">
+                      <div class="faq-arrow w-embed">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewbox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.9998 15L7.75684 10.757L9.17184 9.34302L11.9998 12.172L14.8278 9.34302L16.2428 10.757L11.9998 15Z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <nav class="faq-content w-dropdown-list">
+                  <div class="faq-content-wrapper">
+                    <p class="paragraph-regular">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris.<br /><br />Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit, sed do eiusmod.
+                    </p>
+                  </div>
+                </nav>
+              </div>
+              <div
+                data-delay="0"
+                data-hover="false"
+                class="faq-item-line w-dropdown"
+              >
+                <div class="faq-toggle w-dropdown-toggle">
+                  <div class="faq-title-wrapper">
+                    <div class="heading-large faq-title">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                    <div class="faq-icon-square">
+                      <div class="faq-arrow w-embed">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewbox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.9998 15L7.75684 10.757L9.17184 9.34302L11.9998 12.172L14.8278 9.34302L16.2428 10.757L11.9998 15Z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <nav class="faq-content w-dropdown-list">
+                  <div class="faq-content-wrapper">
+                    <p class="paragraph-regular">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris.<br /><br />Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit, sed do eiusmod.
+                    </p>
+                  </div>
+                </nav>
+              </div>
+              <div
+                data-delay="0"
+                data-hover="false"
+                class="faq-item-line w-dropdown"
+              >
+                <div class="faq-toggle w-dropdown-toggle">
+                  <div class="faq-title-wrapper">
+                    <div class="heading-large faq-title">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                    <div class="faq-icon-square">
+                      <div class="faq-arrow w-embed">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewbox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.9998 15L7.75684 10.757L9.17184 9.34302L11.9998 12.172L14.8278 9.34302L16.2428 10.757L11.9998 15Z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <nav class="faq-content w-dropdown-list">
+                  <div class="faq-content-wrapper">
+                    <p class="paragraph-regular">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris.<br /><br />Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit, sed do eiusmod.
+                    </p>
+                  </div>
+                </nav>
+              </div>
+              <div
+                data-delay="0"
+                data-hover="false"
+                class="faq-item-line w-dropdown"
+              >
+                <div class="faq-toggle w-dropdown-toggle">
+                  <div class="faq-title-wrapper">
+                    <div class="heading-large faq-title">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                    <div class="faq-icon-square">
+                      <div class="faq-arrow w-embed">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewbox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.9998 15L7.75684 10.757L9.17184 9.34302L11.9998 12.172L14.8278 9.34302L16.2428 10.757L11.9998 15Z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <nav class="faq-content w-dropdown-list">
+                  <div class="faq-content-wrapper">
+                    <p class="paragraph-regular">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris.<br /><br />Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit, sed do eiusmod.
+                    </p>
+                  </div>
+                </nav>
+              </div>
+              <div
+                data-delay="0"
+                data-hover="false"
+                class="faq-item-line w-dropdown"
+              >
+                <div class="faq-toggle w-dropdown-toggle">
+                  <div class="faq-title-wrapper">
+                    <div class="heading-large faq-title">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                    <div class="faq-icon-square">
+                      <div class="faq-arrow w-embed">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewbox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.9998 15L7.75684 10.757L9.17184 9.34302L11.9998 12.172L14.8278 9.34302L16.2428 10.757L11.9998 15Z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <nav class="faq-content w-dropdown-list">
+                  <div class="faq-content-wrapper">
+                    <p class="paragraph-regular">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris.<br /><br />Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit, sed do eiusmod.
+                    </p>
+                  </div>
+                </nav>
+              </div>
+              <div
+                data-delay="0"
+                data-hover="false"
+                class="faq-item-line w-dropdown"
+              >
+                <div class="faq-toggle w-dropdown-toggle">
+                  <div class="faq-title-wrapper">
+                    <div class="heading-large faq-title">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                    <div class="faq-icon-square">
+                      <div class="faq-arrow w-embed">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewbox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.9998 15L7.75684 10.757L9.17184 9.34302L11.9998 12.172L14.8278 9.34302L16.2428 10.757L11.9998 15Z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <nav class="faq-content w-dropdown-list">
+                  <div class="faq-content-wrapper">
+                    <p class="paragraph-regular">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris.<br /><br />Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit, sed do eiusmod.
+                    </p>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-footer">
+      <div class="container-large-2">
+        <div class="footer-content-wrapper">
+          <div class="footer-brand">
+            <a href="#" class="footer-logo-mark w-inline-block"
+              ><img
+                src="images/AICLUB_LOGOTIPO3.png"
+                loading="lazy"
+                sizes="(max-width: 479px) 90vw, 100px"
+                srcset="
+                  images/AICLUB_LOGOTIPO3-p-500.png  500w,
+                  images/AICLUB_LOGOTIPO3.png       1018w
+                "
+                alt="Logo"
+                class="footer-logo"
+            /></a>
+          </div>
+          <div class="footer-links">
+            <div class="footer-menu">
+              <a href="#about" class="footer-link w-inline-block">
+                <div>About</div>
+              </a>
+              <div class="footer-line-small"></div>
+              <a href="#features" class="footer-link w-inline-block">
+                <div>Features</div>
+              </a>
+              <div class="footer-line-small"></div>
+              <a href="per-aziende.html" class="footer-link w-inline-block">
+                <div>Aziende</div>
+              </a>
+              <div class="footer-line-small"></div>
+              <a href="per-individui.html" class="footer-link w-inline-block">
+                <div>Individui</div>
+              </a>
+              <div class="footer-line-small"></div>
+              <a href="privacy.html" class="footer-link w-inline-block">
+                <div>Privacy</div>
+              </a>
+              <div class="footer-line-small"></div>
+              <a
+                href="termini-e-condizioni.html"
+                class="footer-link w-inline-block"
+              >
+                <div>Terms</div>
+              </a>
+            </div>
+            <div class="footer-social-row-large">
+              <div class="w-layout-grid footer-social-grid">
+                <a
+                  href="https://www.youtube.com/@datapizza"
+                  target="_blank"
+                  class="footer-social-link w-inline-block"
+                >
+                  <div class="icon w-embed">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      class="w-full h-full"
+                      viewbox="0 0 30 30"
+                    >
+                      <path
+                        d="M 15 4 C 10.814 4 5.3808594 5.0488281 5.3808594 5.0488281 L 5.3671875 5.0644531 C 3.4606632 5.3693645 2 7.0076245 2 9 L 2 15 L 2 15.001953 L 2 21 L 2 21.001953 A 4 4 0 0 0 5.3769531 24.945312 L 5.3808594 24.951172 C 5.3808594 24.951172 10.814 26.001953 15 26.001953 C 19.186 26.001953 24.619141 24.951172 24.619141 24.951172 L 24.621094 24.949219 A 4 4 0 0 0 28 21.001953 L 28 21 L 28 15.001953 L 28 15 L 28 9 A 4 4 0 0 0 24.623047 5.0546875 L 24.619141 5.0488281 C 24.619141 5.0488281 19.186 4 15 4 z M 12 10.398438 L 20 15 L 12 19.601562 L 12 10.398438 z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a
+                  href="https://www.instagram.com/datapizza"
+                  target="_blank"
+                  class="footer-social-link w-inline-block"
+                >
+                  <div class="icon w-embed">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      class="w-full h-full"
+                      viewbox="0 0 30 30"
+                    >
+                      <path
+                        d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/datapizza/posts/?feedView=all"
+                  class="footer-social-link w-inline-block"
+                >
+                  <div class="icon w-embed">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      class="w-full h-full"
+                      viewbox="0 0 30 30"
+                    >
+                      <path
+                        d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=66cde38023387d736eebd3f6"
+      type="text/javascript"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/webflow.js" type="text/javascript"></script>
+  </body>
 </html>
