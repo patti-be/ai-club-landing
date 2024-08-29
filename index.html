@@ -1135,19 +1135,16 @@
 
           var email = document.getElementById("Wailist-Form").value; // Get the email value
 
-          // Your Google Apps Script endpoint URL
           var scriptURL =
             "https://script.google.com/macros/s/AKfycby4b9wxE7ek2lJWiMu_aH8HG-eLbruBdWq0SbKa7CIidcwE59-sMPv9XB1HuFUG3LtQ/exec";
 
-          // Prepare form data
           var formData = new FormData();
           formData.append("Wailist-Form", email);
 
-          // Send form data using the Fetch API
-          fetch(scriptURL, { method: "POST", body: formData })
-            .then((response) => response.text())
-            .then((result) => {
-              console.log("Success:", result); // Log the result for debugging
+          // Send form data using Fetch API in no-cors mode
+          fetch(scriptURL, { method: "POST", body: formData, mode: "no-cors" })
+            .then(() => {
+              console.log("Form submitted successfully"); // You won't see the actual response
               document.querySelector(".w-form-done").style.display = "block"; // Show success message
               document.querySelector(".w-form-fail").style.display = "none"; // Hide error message
             })
