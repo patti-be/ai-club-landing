@@ -746,6 +746,16 @@
               function showThankYouMessage() {
                 document.querySelector(".w-form-done").style.display = "block"; // Show success message
                 document.querySelector(".w-form-fail").style.display = "none"; // Hide error message
+                document.getElementById("wf-form-Form-Waiting-List").reset(); // Clear the form fields
+              }
+            </script>
+
+            <script>
+              var submitted = false;
+
+              function showThankYouMessage() {
+                document.querySelector(".w-form-done").style.display = "block"; // Show success message
+                document.querySelector(".w-form-fail").style.display = "none"; // Hide error message
               }
             </script>
 
