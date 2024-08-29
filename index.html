@@ -690,6 +690,7 @@
                 id="wf-form-Form-Waiting-List"
                 name="wf-form-Form-Waiting-List"
                 method="post"
+                action="https://script.google.com/macros/s/AKfycby4b9wxE7ek2lJWiMu_aH8HG-eLbruBdWq0SbKa7CIidcwE59-sMPv9XB1HuFUG3LtQ/exec"
                 class="footer-form-container-two"
                 data-wf-page-id="66cde38023387d736eebd475"
                 data-wf-element-id="9516e6c7-52a5-bb06-4557-d2ba38b81cb0"
@@ -719,13 +720,13 @@
                   />
                 </div>
               </form>
-              <div class="w-form-done" style="display: none">
+              <div class="w-form-done">
                 <div>
                   Grazie! Ti avvisiamo appena le iscrizioni per singoli saranno
                   aperte
                 </div>
               </div>
-              <div class="w-form-fail" style="display: none">
+              <div class="w-form-fail">
                 <div>Oops! Qualcosa è andato storto</div>
               </div>
             </div>
@@ -1127,7 +1128,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/webflow.js" type="text/javascript"></script>
-    <script>
+    <!-- <script>
       document
         .getElementById("wf-form-Form-Waiting-List")
         .addEventListener("submit", function (event) {
@@ -1154,6 +1155,6 @@
               document.querySelector(".w-form-fail").style.display = "block"; // Show error message
             });
         });
-    </script>
+    </script> -->
   </body>
 </html>
