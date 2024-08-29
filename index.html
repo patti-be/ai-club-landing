@@ -692,9 +692,15 @@
                 method="post"
                 action="https://script.google.com/macros/s/AKfycby4b9wxE7ek2lJWiMu_aH8HG-eLbruBdWq0SbKa7CIidcwE59-sMPv9XB1HuFUG3LtQ/exec"
                 target="hidden_iframe"
-                onsubmit="submitted=true;"
-                class="footer-form-container-two"
+                <!--
+                target
+                the
+                iframe
+                --
               >
+                onsubmit="submitted=true;"
+                <!-- Flag to track submission -->
+                class="footer-form-container-two" >
                 <div>
                   <h2 class="h3-heading is-individuo">
                     Aggiungiti alla lista d'attesa
@@ -726,7 +732,7 @@
                 name="hidden_iframe"
                 id="hidden_iframe"
                 style="display: none"
-                onload="if(submitted) { showThankYouMessage(); }"
+                onload="showThankYouMessage();"
               ></iframe>
 
               <div class="w-form-done" style="display: none">
@@ -744,27 +750,13 @@
               var submitted = false;
 
               function showThankYouMessage() {
-                document.querySelector(".w-form-done").style.display = "block"; // Show success message
-                document.querySelector(".w-form-fail").style.display = "none"; // Hide error message
-                document.getElementById("wf-form-Form-Waiting-List").reset(); // Clear the form fields
-              }
-            </script>
-
-            <script>
-              var submitted = false;
-
-              function showThankYouMessage() {
-                document.querySelector(".w-form-done").style.display = "block"; // Show success message
-                document.querySelector(".w-form-fail").style.display = "none"; // Hide error message
-              }
-            </script>
-
-            <script>
-              var submitted = false;
-
-              function showThankYouMessage() {
-                document.querySelector(".w-form-done").style.display = "block"; // Show success message
-                document.querySelector(".w-form-fail").style.display = "none"; // Hide error message
+                if (submitted) {
+                  document.querySelector(".w-form-done").style.display =
+                    "block"; // Show success message
+                  document.querySelector(".w-form-fail").style.display = "none"; // Hide error message
+                  document.getElementById("wf-form-Form-Waiting-List").reset(); // Clear the form fields
+                  submitted = false; // Reset the submitted flag
+                }
               }
             </script>
           </div>
