@@ -4,9 +4,6 @@
   --beige: #f5f2ea;
   --royal-blue: #4c6fb2;
 }
-.nav-link.is-cta {
-  display: none;
-}
 
 .w-layout-grid {
   grid-row-gap: 16px;
@@ -425,6 +422,10 @@ body {
   color: var(--main-red);
 }
 
+.nav-link.is-cta {
+  display: none;
+}
+
 .div-block {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
@@ -532,6 +533,10 @@ body {
   align-items: center;
 }
 
+.grid-content.is-feat {
+  grid-column-gap: 10px;
+}
+
 .heading-large {
   color: #061237;
   letter-spacing: -0.02em;
@@ -610,14 +615,14 @@ body {
   z-index: -1;
   background-color: #f5f2ea;
   border-radius: 20px;
-  width: 80%;
-  height: 80%;
+  width: 97%;
+  height: 107%;
+  display: none;
   position: absolute;
   inset: -20px auto auto -20px;
 }
 
 .image-block-small {
-  height: 380px;
   position: relative;
 }
 
@@ -1905,6 +1910,10 @@ body {
   margin-right: auto;
 }
 
+.feat-logo {
+  width: 400px;
+}
+
 @media screen and (min-width: 1440px) {
   .grid-2-columns.form {
     grid-column-gap: 32px;
@@ -1918,10 +1927,6 @@ body {
 }
 
 @media screen and (max-width: 991px) {
-  .nav-link.is-cta {
-    color: var(--dark-red);
-    display: block;
-  }
   .card-heart {
     top: -66%;
   }
@@ -2020,6 +2025,7 @@ body {
 
   .nav-link.is-cta {
     color: var(--dark-red);
+    display: block;
   }
 
   .card-ui-graph {
@@ -2029,6 +2035,16 @@ body {
   .grid-content {
     grid-row-gap: 72px;
     grid-template-columns: 1fr;
+  }
+
+  .grid-content.is-feat {
+    flex-flow: wrap-reverse;
+    grid-auto-flow: row dense;
+    display: flex;
+  }
+
+  .content-wrapper.is-feat-txt {
+    max-width: 600px;
   }
 
   .paragraph-large.s-center,
@@ -2235,6 +2251,11 @@ body {
     padding-bottom: 10px;
   }
 
+  .grid-content.is-feat {
+    justify-content: center;
+    align-items: center;
+  }
+
   .paragraph-large {
     text-align: center;
     max-width: 100%;
@@ -2242,6 +2263,13 @@ body {
 
   .h3-heading.is-azienda {
     text-align: center;
+  }
+
+  .image-block-small.logos {
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
   }
 
   .title-wrapper {
@@ -2543,7 +2571,8 @@ body {
     padding-bottom: 50px;
   }
 
-  .section.is-about {
+  .section.is-about,
+  .section.section-who {
     padding-bottom: 20px;
   }
 
