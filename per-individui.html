@@ -125,13 +125,13 @@
         </div>
         <div class="footer-form-two is-main w-form">
           <form
-            id="wf-form-Footer-Form-Two"
+            id="wf-form-waitlist-main"
             name="wf-form-Footer-Form-Two"
-            data-name="Footer Form Two"
-            method="get"
             class="footer-form-container-two"
-            data-wf-page-id="66cdf1088ac75f5ef1849666"
-            data-wf-element-id="208214c2-f305-6925-8ce4-4fd00e48141b"
+            method="post"
+            action="https://script.google.com/macros/s/AKfycby4b9wxE7ek2lJWiMu_aH8HG-eLbruBdWq0SbKa7CIidcwE59-sMPv9XB1HuFUG3LtQ/exec"
+            target="hidden_iframe"
+            onsubmit="submitted=true;"
           >
             <div class="waitlist-email-form is-main">
               <input
@@ -152,13 +152,37 @@
               />
             </div>
           </form>
-          <div class="w-form-done">
-            <div>Grazie! Ti contattiamo non appena aprono le iscrizioni</div>
+          <!-- Hidden iframe to avoid page reload -->
+          <iframe
+            name="hidden_iframe"
+            id="hidden_iframe"
+            style="display: none"
+            onload="showThankYouMessage();"
+          ></iframe>
+
+          <div class="w-form-done" style="display: none">
+            <div>
+              Grazie! Ti avvisiamo appena le iscrizioni per singoli saranno
+              aperte
+            </div>
           </div>
-          <div class="w-form-fail">
-            <div>Oops! Qualcosa e&#x27; andato storto</div>
+          <div class="w-form-fail" style="display: none">
+            <div>Oops! Qualcosa è andato storto</div>
           </div>
         </div>
+
+        <script>
+          var submitted = false;
+
+          function showThankYouMessage() {
+            if (submitted) {
+              document.querySelector(".w-form-done").style.display = "block"; // Show success message
+              document.querySelector(".w-form-fail").style.display = "none"; // Hide error message
+              document.getElementById("wf-form-waitlist-main").reset(); // Clear the form fields
+              submitted = false; // Reset the submitted flag
+            }
+          }
+        </script>
       </div>
     </div>
     <div id="aziende" class="section">
