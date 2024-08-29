@@ -743,6 +743,12 @@
             <script>
               var submitted = false;
 
+              // Attach the onload event to the iframe once the page loads
+              window.onload = function () {
+                document.getElementById("hidden_iframe").onload =
+                  showThankYouMessage;
+              };
+
               function showThankYouMessage() {
                 if (submitted) {
                   document.querySelector(".w-form-done").style.display =
