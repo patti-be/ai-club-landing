@@ -123,35 +123,37 @@
             waitlist, ti contatteremo appena potrai accedere
           </p>
         </div>
-        <div class="footer-form-two is-main w-form">
+        <div class="footer-form-two blocco-individuo w-form">
           <form
-            id="wf-form-waitlist-main"
-            name="wf-form-Footer-Form-Two"
-            class="footer-form-container-two"
+            id="wf-form-Form-Waiting-List"
+            name="wf-form-Form-Waiting-List"
             method="post"
             action="https://script.google.com/macros/s/AKfycby4b9wxE7ek2lJWiMu_aH8HG-eLbruBdWq0SbKa7CIidcwE59-sMPv9XB1HuFUG3LtQ/exec"
             target="hidden_iframe"
             onsubmit="submitted=true;"
+            class="footer-form-container-two"
           >
             <div class="waitlist-email-form is-main">
               <input
                 class="footer-form-input w-input"
                 maxlength="256"
-                name="Waitlist-Email-Form"
-                data-name="Waitlist Email Form"
+                name="Wailist-Form"
+                data-name="Wailist Form"
                 aria-label="Enter your email"
                 placeholder="Aggiungi la tua email"
                 type="email"
-                id="Waitlist-Email-Form"
+                id="Wailist-Form"
                 required=""
-              /><input
+              />
+              <input
                 type="submit"
                 data-wait="Invio..."
                 class="button-primary footer-form-button w-button"
-                value="Aggiungimi alla lista"
+                value="Mettimi in lista"
               />
             </div>
           </form>
+
           <!-- Hidden iframe to avoid page reload -->
           <iframe
             name="hidden_iframe"
@@ -178,7 +180,7 @@
             if (submitted) {
               document.querySelector(".w-form-done").style.display = "block"; // Show success message
               document.querySelector(".w-form-fail").style.display = "none"; // Hide error message
-              document.getElementById("wf-form-waitlist-main").reset(); // Clear the form fields
+              document.getElementById("wf-form-Form-Waiting-List").reset(); // Clear the form fields
               submitted = false; // Reset the submitted flag
             }
           }
