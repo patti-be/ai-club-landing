@@ -3120,6 +3120,9 @@ p {
 }
 
 @media screen and (max-width: 479px) {
+  .plan-type {
+    width: auto;
+  }
   .card-heart {
     top: -12%;
   }
