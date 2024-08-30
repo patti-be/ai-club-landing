@@ -3120,6 +3120,12 @@ p {
 }
 
 @media screen and (max-width: 479px) {
+  #card-form {
+    width: 100%;
+  }
+  .blocco-toggle {
+    background-color: transparent;
+  }
   .plan-type {
     width: auto;
   }
