@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--  Last Published: Thu Aug 29 2024 10:56:20 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Fri Aug 30 2024 17:47:59 GMT+0000 (Coordinated Universal Time)  -->
 <html
   data-wf-page="66cdf1088ac75f5ef1849666"
   data-wf-site="66cde38023387d736eebd3f6"
@@ -48,8 +48,8 @@
             (n.className += t + "touch");
       })(window, document);
     </script>
-    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link href="images/webclip.png" rel="apple-touch-icon" />
+    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="images/webclip.ico" rel="apple-touch-icon" />
   </head>
   <body>
     <div class="full-header-wrapper">
@@ -58,7 +58,6 @@
           data-collapse="medium"
           data-animation="default"
           data-duration="400"
-          data-w-id="e2f97efd-812e-0919-8230-33257edca12a"
           data-easing="ease"
           data-easing2="ease"
           role="banner"
@@ -68,32 +67,25 @@
             <div class="navigation-menu">
               <a href="index.html" class="brand w-nav-brand"
                 ><img
-                  src="images/AICLUB_LOGOTIPO3.png"
-                  loading="lazy"
-                  sizes="(max-width: 479px) 50vw, 120px"
+                  sizes="(max-width: 479px) 50vw, 119.99999237060547px"
                   srcset="
                     images/AICLUB_LOGOTIPO3-p-500.png  500w,
                     images/AICLUB_LOGOTIPO3.png       1018w
                   "
                   alt=""
+                  src="images/AICLUB_LOGOTIPO3.png"
+                  loading="lazy"
                   class="logo"
               /></a>
               <nav role="navigation" class="nav-menu w-nav-menu">
-                <a
-                  href="https://patti-be.github.io/ai-club-landing/index.html#about"
-                  class="nav-link w-nav-link"
-                  >About</a
-                >
-                <a
-                  href="https://patti-be.github.io/ai-club-landing/index.html#features"
-                  class="nav-link w-nav-link"
-                  >Features</a
-                >
+                <a href="index.html" class="nav-link w-nav-link">Home</a>
+                <a href="#" class="nav-link w-nav-link">About</a>
+                <a href="#" class="nav-link w-nav-link">Features</a>
                 <a href="per-aziende.html" class="nav-link w-nav-link"
                   >Aziende</a
                 >
-                <a href="per-individui.html" class="nav-link w-nav-link"
-                  >Individui</a
+                <a href="#" class="nav-link is-cta w-nav-link"
+                  >Entra in AI Club</a
                 >
               </nav>
             </div>
@@ -111,13 +103,17 @@
         <div class="title-wrapper-wailist">
           <h3 class="h3-heading">Entra anche tu in AI Club</h3>
           <p class="azienda-par">
-            Lasciaci la tua email e ti contatteremo con i prossimi step
+            Rimani al passo con le ultime innovazioni, partecipa a sessioni di
+            formazione esclusive, e connettiti con un network di esperti del
+            settore. Lasciaci la tua email e ti contatteremo con i prossimi
+            step.
           </p>
           <p class="individuo-par">
             Individuo? Presto potrai unirti anche tu, unisciti alla nostra
             waitlist, ti contatteremo appena potrai accedere
           </p>
         </div>
+
         <div class="footer-form-two is-main w-form">
           <form
             id="wf-form-Form-Waiting-List"
@@ -128,7 +124,7 @@
             onsubmit="submitted=true;"
             class="footer-form-container-two"
           >
-            <div class="waitlist-email-form is-main">
+            <div class="waitlist-email-form">
               <input
                 class="footer-form-input w-input"
                 maxlength="256"
@@ -144,7 +140,7 @@
                 type="submit"
                 data-wait="Invio..."
                 class="button-primary footer-form-button w-button"
-                value="Invia"
+                value="Voglio entrare"
               />
             </div>
           </form>
@@ -157,23 +153,26 @@
             onload="showThankYouMessage();"
           ></iframe>
 
-          <div class="w-form-done" style="display: none">
-            <div>
-              Grazie! Ti avvisiamo appena le iscrizioni per singoli saranno
-              aperte
-            </div>
+          <div id="form-success" class="w-form-done" style="display: none">
+            <div>Grazie! Ti scriviamo a breve con i prossimi step.</div>
           </div>
-          <div class="w-form-fail" style="display: none">
+          <div id="form-fail" class="w-form-fail" style="display: none">
             <div>Oops! Qualcosa è andato storto</div>
           </div>
         </div>
-
         <script>
           var submitted = false;
+          // Attach the onload event to the iframe once the page loads
+          window.onload = function () {
+            document.getElementById("hidden_iframe").onload =
+              showThankYouMessage;
+          };
 
           function showThankYouMessage() {
             if (submitted) {
-              document.querySelector(".w-form-done").style.display = "block"; // Show success message
+              console.log(document.querySelector("#form-success"));
+              document.querySelector("#form-success").style.display = "block"; // Show success message
+              console.log(document.querySelector("#form-success"));
               document.querySelector(".w-form-fail").style.display = "none"; // Hide error message
               document.getElementById("wf-form-Form-Waiting-List").reset(); // Clear the form fields
               submitted = false; // Reset the submitted flag
@@ -233,10 +232,12 @@
               class="blog-wrapper w-inline-block"
             >
               <div class="blog-wrapper-image">
-                <img src="images/Frame-26.png" loading="lazy" alt="" />
+                <img src="images/together.png" loading="lazy" alt="" />
               </div>
               <div class="blog-content">
-                <div class="blog-heading">Rimani competitivo</div>
+                <div class="blog-heading">
+                  <strong>Conosci altri innovatori italiani</strong>
+                </div>
               </div>
             </a>
             <a
