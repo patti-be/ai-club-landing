@@ -1433,6 +1433,7 @@ p {
   flex-flow: column;
   align-items: center;
   display: flex;
+  background-color: transparent;
 }
 
 .blocco-individuo {
